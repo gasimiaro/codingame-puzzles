@@ -1,4 +1,35 @@
 #https://www.codingame.com/ide/puzzle/queen-control
+
+###### best solution ###########
+
+# echiquier = []
+# color = input()
+# for i in range(8):
+#     line = input()
+#     echiquier.append(list(line))
+#     if 'Q' in line:xQ, yQ = line.index('Q'), i
+
+# nombre_carres = 0
+
+# for dx, dy in [(-1,-1), (-1,0), (-1, 1), (0,-1), (0, 1), (1, -1), (1,0), (1,1)]:
+#     x, y = xQ, yQ
+#     bloque = False
+#     while 0 <= x + dx < 8 and 0 <= y + dy < 8 and not bloque: # on est sur l'échiquier
+#         x += dx
+#         y += dy
+#         if echiquier[y][x] == '.':nombre_carres +=1
+#         elif echiquier[y][x] != color[0]:# on a une piece adverse
+#             nombre_carres +=1
+#             #il faut s'arreter dans la progression
+#             bloque = True
+#         else: # on a une piece à nous, on ne peut traverser : on s'arrete
+#             bloque = True
+
+# print(nombre_carres)
+
+
+############### my solution ########################
+
 col = input()
 color = "w" if col == "white" else "b"
 chess_table =[]
