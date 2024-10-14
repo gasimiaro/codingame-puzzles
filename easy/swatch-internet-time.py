@@ -24,9 +24,8 @@ beats = (time_in_seconds / 86.4)
 
 if str(int(beats * 1000)/1000)[-1] == "5":
       beats += 0.01 
-if str(int(beats * 10000)/10000) == "501.8749":  #lol
-      beats = 501.88
 
-rounded_beats = round(beats, 2)
+
+rounded_beats = round(beats, 3)
 
 print(f"@{rounded_beats:.2f}")
